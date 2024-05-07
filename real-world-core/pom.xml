@@ -13,6 +13,9 @@
     <artifactId>real-world-core</artifactId>
     <name>real-world-core</name>
 
+    <build>
+        <finalName> real-world-core</finalName>
+    </build>
 
 
 </project>

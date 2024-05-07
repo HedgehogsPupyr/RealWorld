@@ -12,6 +12,7 @@
 	<modules>
 		<module>real-world-core</module>
 		<module>real-world-webapp</module>
+		<module>real-world-webapp-resources</module>
 	</modules>
 
 
