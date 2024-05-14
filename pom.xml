@@ -15,6 +15,18 @@
 		<module>real-world-webapp-resources</module>
 	</modules>
 
+	<profiles>
+		<profile>
+			<id>real-world</id>
+			<activation>
+				<activeByDefault> true</activeByDefault>
+			</activation>
+			<modules>
+				<module>real-world-core</module>
+				<module>real-world-webapp</module>
+			</modules>
+		</profile>
+	</profiles>
 
 	<groupId>com.HedgehogsPupyr</groupId>
 	<artifactId>real-world</artifactId>
