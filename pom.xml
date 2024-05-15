@@ -1,54 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+    </parent>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
-	</parent>
-	<packaging>pom</packaging>
-	<modules>
-		<module>real-world-core</module>
-		<module>real-world-webapp</module>
-		<module>real-world-webapp-resources</module>
-	</modules>
+    <groupId>com.HedgehogsPupyr</groupId>
+    <artifactId>real-world</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-	<profiles>
-		<profile>
-			<id>real-world</id>
-			<activation>
-				<activeByDefault> true</activeByDefault>
-			</activation>
-			<modules>
-				<module>real-world-core</module>
-				<module>real-world-webapp</module>
-			</modules>
-		</profile>
-	</profiles>
+    <modules>
+        <module>real-world-core</module>
+        <module>real-world-webapp</module>
+        <module>real-world-webapp-resources</module>
+    </modules>
 
-	<groupId>com.HedgehogsPupyr</groupId>
-	<artifactId>real-world</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>real-world</name>
-	<description>RealWorld project for Spring Boot</description>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
 
-	<properties>
-		<java.version>17</java.version>
-	</properties>
+    <profiles>
+        <profile>
+            <id>real-world</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>real-world-core</module>
+                <module>real-world-webapp</module>
+            </modules>
+        </profile>
+    </profiles>
 
-	<dependencies>
-
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

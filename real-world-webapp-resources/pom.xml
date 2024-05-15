@@ -6,12 +6,6 @@
         <artifactId>real-world</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <artifactId>real-world-webapp-resources</artifactId>
-
-    <name>real-world-webapp-resources</name>
-
-    <dependencies>
-
-    </dependencies>
-
 </project>
