@@ -7,10 +7,5 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>real-world-core</artifactId>
-    <packaging>jar</packaging>
-
-    <build>
-        <finalName>real-world-core</finalName>
-    </build>
+    <artifactId>real-world-webapp-resources</artifactId>
 </project>
